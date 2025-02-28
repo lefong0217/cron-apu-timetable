@@ -3,7 +3,7 @@ config();
 
 const s3Endpoint = process.env.APU_TIMETABLE_S3;
 const intakeCode = process.env.INTAKE_CODE;
-const nonElectives = []; // Add MODID that is NOT your elective
+const nonElectives = ["CT117-3-2-FWDD", "CT074-3-2-CCP"]; // Add MODID that is NOT your elective
 const grouping = "G1"; // G1 is default, grouping to filter by
 
 export async function fetchTimetable() {
